@@ -1,1 +1,44 @@
 \section{Real Number}
+Real numbers are numbers like $1$, $-1$, $\sqrt 2$, $\pi$, $e$, etc.
+The set of all real numbers is denoted by $\mathbb R$.
+$\mathbb R$ is a complete ordered field $(\mathbb{R}, +, \times, <)$ of character zero.
+Its prime field is $\mathbb{Q}$ and it's the Archimedean complete valuation of $\mathbb{Q}$.
+
+Since $\mathbb{R}$ is a field with total order $<$, any two real numbers $x, y$ are comparable,
+we write $\min\{x, y\}$ for a smaller one of $x, y$ and $\max\{x, y\}$ for the larger one.
+This notation exteneds to finite many real numbers, i.e.
+$\min\{x_1, \dots, x_n\}$ for the smallest one among $\{x_i\}_{i=1}^n$
+and $\max\{x_1, \dots, x_n\}$ for the largest one among $\{x_i\}_{i=1}^n$.
+However, for infinite many real numbers $\{x_i\}_{i \in I}$, $\min\{x_i\}$ and $\max\{x_i\}$ may not exist.
+
+Let $A$ be a non-empty subset of $\mathbb{R}$, $A$ is upper bounded if there exist $M \in \mathbb{R}$,
+such that $a \leq M$ for all $a \in A$;
+and is lower bounded if there exist $m \in \mathbb{R}$ such that $a \geq m$ for all $a \in A$.
+$A$ is bounded if $A$ is upper bounded and lower bounded.
+For $A \subseteq \mathbb{R}$, let $U(A) = \{M \mid \forall a \in A, a \leq M\}$
+and $L(A) = \{m \mid \forall a \in A, a \geq m\}$.
+Therefore $A$ is upper bounded if and only if $U(A) \neq \emptyset$,
+$A$ is lower bounded if and only if $L(A) \neq \emptyset$.
+
+Let $A$ be a non-empty subset of $\mathbb{R}$.
+If $A$ is upper bounded, then $\min U(A)$ exists, denoted by $\sup A$;
+if $A$ is lower bounded, then $\max L(A)$ exists, denoted by $\inf A$.
+
+\begin{pro}
+If $u = \sup A$, then for any positive real number $\epsilon$, there is an element $a \in A$,
+such that $u - \epsilon < a \leq u$;
+if $v = \inf A$, then for any positive real number $\epsilon$, there is an element $a \in A$,
+such that $v \leq a < v + \epsilon$.
+\end{pro}
+
+\begin{pro}
+Define $A + B = \{a + b \mid a \in A, b \in B\}$,
+\begin{enumerate}[i.]
+\item $\sup(A + B) = \sup A + \sup B$ if $\sup A$ and $\sup B$ both exist;
+\item $\inf(A + B) = \inf A + \inf B$ if $\inf A$ and $\inf B$ both exist.
+\end{enumerate}
+\end{pro}
+
+\begin{pro}
+For positive real numbers $x, y$, there exists integer $n$ such that $nx > y$.
+\end{pro}
