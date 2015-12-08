@@ -12,10 +12,10 @@ Rewrite of elementary math notes.
 
 ## Algebra
 * linear algebra
-* abstract algebra
+* [abstract algebra](./algebra2)
 
 ## Geometry
-* general topology
+* [general topology](./topology1)
 * differential geometry
 
 
