@@ -1,0 +1,54 @@
+\section{Matrix}
+An $m$-by-$n$ matrix is simply $mn$ numbers arranged in $m$ rows and $n$ colomns:
+$$\left(\begin{matrix}
+a_{11} & \cdots & a_{1n} \cr
+\vdots & \ddots & \vdots \cr
+a_{m1} & \cdots & a_{mn}
+\end{matrix}\right)$$
+
+\subsection{Matrix Operation}
+For two matrix of the same size, if addition is defined on their elements,
+we can define their sum as termwise sum
+$$\left(\begin{matrix}
+a_{11} & \cdots & a_{1n} \cr
+\vdots & \ddots & \vdots \cr
+a_{m1} & \cdots & a_{mn}
+\end{matrix}\right) +
+\left(\begin{matrix}
+b_{11} & \cdots & b_{1n} \cr
+\vdots & \ddots & \vdots \cr
+b_{m1} & \cdots & b_{mn}
+\end{matrix}\right) 
+=\left(\begin{matrix}
+a_{11} + b_{11} & \cdots & a_{1n} + b_{1n} \cr
+\vdots & \ddots & \vdots \cr
+a_{m1} + b_{m1} & \cdots & a_{mn} + b_{mn}
+\end{matrix}\right)$$
+For a $k$-by-$m$ matrix $A = (a_{ij})$ and an $m$-by-$n$ matrix $B = (b_{ij})$,
+if both addition and multiplication are deifned on their elements\footnote{
+Usually we interested in a matrix whose elements are from a commutative ring.},
+we can define their product $AB$ as a $k$-by-$n$ matrix $C = (c_{ij})$, where
+$$c_{ij} = \sum_{k=1}^m a_{ik}b_{kj}$$
+One can check by definition that the associative law $$A(BC) = (AB)C$$ 
+and distribution law 
+\begin{align*}
+A(B + C) &= AB + AC \\
+(A + B)C &= AB + BC
+\end{align*}
+hold if their sizes are proper to be added and multiplied.
+But the commutative law $AB = BA$ doesn't hold in general.
+
+If $A = (a_{ij})$ is an $m$-by-$n$ matrix,
+we define the transpose of $A$ as a $n$-b-$m$ matrix,
+$A^\prime = (a^\prime_{ij})$, where $a^\prime_{ij} = a_{ji}$.
+
+\begin{rem}
+All matrixes over commutative ring $R$ can be considered as a category,
+where the objects are positive integers, and the morphisms from $m$ to $n$ are 
+the $m$-by-$n$ matrixes. Note that $\hom(m, n)$ forms an abelian group, the 
+transpose defines a group isomorphism between $\hom(m, n)$ and $\hom(n, m)$.
+And $\hom(n, n)$ forms an $R$-algebra. When $R = K$ is a field, $\hom(n, n)$
+is a $K$-linear space of dimension $n^2$.
+\end{rem}
+
+\subsection{Row-Column Transformation}
