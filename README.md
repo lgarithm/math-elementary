@@ -11,7 +11,7 @@ Rewrite of elementary math notes.
 * differential equation
 
 ## Algebra
-* linear algebra
+* [linear algebra](./linear1)
 * [abstract algebra](./algebra2)
 
 ## Geometry
