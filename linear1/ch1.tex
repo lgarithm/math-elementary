@@ -77,8 +77,21 @@ The action of $\sigma$ on matrix $A$ is equivalent to multiply $A$ by the
 permutation matirx $\delta(i, \sigma^{-1}(j))$ on the left.
 \end{pro}
 
-The colomn transformation is similar to row transformation.
+The column transformation has similar results to row transformation.
 
 \subsection{Triangular Matrix}
+A matrix $A = (a_{ij})$ is upper trangular if $a_{ij} = 0$ when $i > j$,
+is lower trangular if $a_{ij} = 0$ when $i < j$.
+A is called a diagonal matrix if $a_{ij} = 0$ when $i \neq j$.
+
+\begin{pro}
+For any Euclid ring $R$, and $A \in \mat_{mn}(R)$, there exists a square matrix
+$T \in \mat_{mm}$ such that $TA$ is an upper triangular matrix.
+\end{pro}
+
+\begin{cly}
+For any matrix $A$ over an Euclid ring, there exists $P$, $Q$ such
+that $PAQ$ is a diagonal matrix.
+\end{cly}
 
 \subsection{Square Matrix}
