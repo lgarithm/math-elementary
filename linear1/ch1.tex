@@ -18,7 +18,7 @@ a_{m1} & \cdots & a_{mn}
 b_{11} & \cdots & b_{1n} \cr
 \vdots & \ddots & \vdots \cr
 b_{m1} & \cdots & b_{mn}
-\end{matrix}\right) 
+\end{matrix}\right)
 =\left(\begin{matrix}
 a_{11} + b_{11} & \cdots & a_{1n} + b_{1n} \cr
 \vdots & \ddots & \vdots \cr
@@ -29,8 +29,8 @@ if both addition and multiplication are deifned on their elements\footnote{
 Usually we interested in a matrix whose elements are from a commutative ring.},
 we can define their product $AB$ as a $k$-by-$n$ matrix $C = (c_{ij})$, where
 $$c_{ij} = \sum_{k=1}^m a_{ik}b_{kj}$$
-One can check by definition that the associative law $$A(BC) = (AB)C$$ 
-and distribution law 
+One can check by definition that the associative law $$A(BC) = (AB)C$$
+and distribution law
 \begin{align*}
 A(B + C) &= AB + AC \\
 (A + B)C &= AB + BC
@@ -44,11 +44,41 @@ $A^\prime = (a^\prime_{ij})$, where $a^\prime_{ij} = a_{ji}$.
 
 \begin{rem}
 All matrixes over commutative ring $R$ can be considered as a category,
-where the objects are positive integers, and the morphisms from $m$ to $n$ are 
-the $m$-by-$n$ matrixes. Note that $\hom(m, n)$ forms an abelian group, the 
+where the objects are positive integers, and the morphisms from $m$ to $n$ are
+the $m$-by-$n$ matrixes. Note that $\hom(m, n)$ forms an abelian group, the
 transpose defines a group isomorphism between $\hom(m, n)$ and $\hom(n, m)$.
 And $\hom(n, n)$ forms an $R$-algebra. When $R = K$ is a field, $\hom(n, n)$
 is a $K$-linear space of dimension $n^2$.
 \end{rem}
 
 \subsection{Row-Column Transformation}
+For given $m, n$, let $\mat_{mn}(R)$ denote the set of $m$-by-$n$ matrixes over $R$,
+or simply $\mat_{mn}$. Define the action of $S_m$ on $\mat_{mn}$ by permuting
+the rows, i.e.
+\begin{equation*}
+\sigma :
+\left(\begin{matrix}
+a_{11} & \cdots & a_{1n} \cr
+\vdots & \ddots & \vdots \cr
+a_{m1} & \cdots & a_{mn}
+\end{matrix}\right)
+\to
+\left(\begin{matrix}
+a_{\sigma(1) 1} & \cdots & a_{\sigma(1) n} \cr
+\vdots & \ddots & \vdots \cr
+a_{\sigma(m) 1} & \cdots & a_{\sigma(m) n}
+\end{matrix}\right)
+\end{equation*}
+
+A permutation matirx is a matirx such that $a_{ij} = \delta(i, \sigma(j))$ for
+some permutation $\sigma$.
+\begin{pro}
+The action of $\sigma$ on matrix $A$ is equivalen to multiply $A$ by a permutation
+matirx on the left. In fact, the permutation matirx is $\delta(i, \sigma^{-1}(j))$.
+\end{pro}
+
+The colomn transformation is similar to row transformation.
+
+\subsection{Triangular Matrix}
+
+\subsection{Square Matrix}
