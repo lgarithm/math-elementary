@@ -1,4 +1,3 @@
-% \documentclass{standalone}
 \documentclass{article}
 \input inc
 \input def
@@ -8,17 +7,23 @@
 \date{Dec 2015 -- 2016}
 
 \begin{document}
+\doparttoc
+
 \maketitle
+
 \newpage
+\setcounter{tocdepth}{1}
 \tableofcontents
 \newpage
 
 \part{Analysis I}
+\parttoc
 \newpage
 \input ../analysis1/chapters
 \newpage
 
 \part{Linear Algebra I}
+\parttoc
 \newpage
 \input ../linear1/chapters
 \newpage
