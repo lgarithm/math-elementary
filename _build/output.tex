@@ -3,6 +3,13 @@
 \input def
 \input thm
 
+\def\genpart#1#2{
+\part{#1}
+\parttoc
+\newpage
+\input ../#2/chapters
+\newpage}
+
 \title{Elementary Math Notes}
 \date{Dec 2015 -- 2016}
 
@@ -16,16 +23,8 @@
 \tableofcontents
 \newpage
 
-\part{Analysis I}
-\parttoc
-\newpage
-\input ../analysis1/chapters
-\newpage
-
-\part{Linear Algebra I}
-\parttoc
-\newpage
-\input ../linear1/chapters
-\newpage
+\genpart{Analysis I}{analysis1}
+\genpart{Linear Algebra I}{linear1}
+\genpart{Abstract Algebra}{algebra2}
 
 \end{document}
