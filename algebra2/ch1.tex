@@ -1,0 +1,89 @@
+\section{Algebraic Operation}
+
+\subsection{Set}
+\begin{defi}[power set]
+Let $X$ be a set, the power set of $X$ is the set of all subsets of $X$.
+\end{defi}
+
+Power set of $X$ are denoted by $\mathcal P(X)$ or $2^X$.
+
+\begin{defi}[cover]
+Let $\mathcal C \subseteq \mathcal P(X)$, $\mathcal C$ is a cover of $X$ iff 
+$$\bigcup_{U \in \mathcal C} U = X$$
+\end{defi}
+
+\begin{defi}[partition]
+A cover $\mathcal C$ of $X$ is a partition iff any two distinct elements of $\mathcal C$
+are disjoint.
+\end{defi}
+
+\subsection{Relation}
+\begin{defi}[binary relation]
+Let $X, Y$ be sets, a binary relation $R$ between $X$ and $Y$ is a subset of $X \times Y$.
+\end{defi}
+
+\begin{defi}[connection]
+Let $X, Y, Z$ be sets, $R \subseteq X \times Y$, $S \subseteq X \times Y$ be binary relations,
+the connection of $R$ and $S$ is a binary relation $T \subseteq X \times Z$,
+$(x, z) \in T$ iff $\exists y \in Y$ such that $(x, y) \in R$ and $(y, z) \in S$.
+\end{defi}
+
+Binary relation usually written as infix form, i.e. we write $x R y$ for $(x, y) \in R$.
+Note that $y R x$ doesn't make sense when $Y \neq X$.
+
+Now we consider binary relations when $Y = X$.
+
+\subsubsection{Equivalent Relation}
+\begin{defi}[transitive]
+A binary relation $\sim$ on $X$ is transitive iff for any $x \sim y$ and $y \sim z$,
+$x \sim z$.
+\end{defi}
+
+\begin{defi}[reflexive]
+A binary relation $\sim$ on $X$ is reflexive iff $x \sim x \forall x \in X$.
+\end{defi}
+
+\begin{defi}[symetric]
+A binary relation $\sim$ on $X$ is symetric iff $y \sim x \forall x \sim y$.
+\end{defi}
+
+\begin{defi}[equivalent relation]
+A binary relation $\sim$ on $X$ is an equivalent relation iff it is transitive, 
+reflexive and symetric.
+\end{defi}
+
+Equivalent relation plays an very important role in algebra, which leads to the
+concept of quotient.
+
+\begin{defi}[orbit]
+Let $\sim$ be an equivalent relation on $X$, for $x \in X$, the orbit of $x$ is
+$O(x) = \{y \mid y \sim x\}$.
+\end{defi}
+
+\begin{defi}[quotient]
+Let $\sim$ be an equivalent relation on $X$, the set of all orbits forms a partition
+of $X$, called the quotient set of $X$ modulo $\sim$, denoted by $X / \sim$.
+\end{defi}
+
+\subsubsection{Order}
+
+\subsection{Operation}
+\begin{defi}[unary operation]
+Let $X$ be a set, an unary operation on $X$ is a map $X \in X$.
+\end{defi}
+
+\begin{defi}[binary operation]
+Let $X, Y, Z$ be sets, a binary operation on $X, Y$ is a map $o : X \times Y \to Z$.
+\end{defi}
+
+Now we consider the binary operation on $X$.
+
+\begin{defi}[commutative operation]
+The operation $\circ : X \times X \to X$ is commutative iff $x \circ y = y \circ x$
+for any $x, y, z \in X$.
+\end{defi}
+
+\begin{defi}[associative operation]
+The operation $\circ : X \times X \to X$ is associative iff $(x \circ y) \circ z = x \circ (y \circ z)$
+for any $x, y, z \in X$.
+\end{defi}
