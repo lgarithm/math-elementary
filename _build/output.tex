@@ -4,11 +4,13 @@
 \input thm
 
 \def\genpart#1#2{
-\part{#1}
-\parttoc
-\newpage
-\input ../#2/chapters
-\newpage}
+  \part{#1}
+  \parttoc
+  \newpage
+  \input ../#2/chapters
+  \newpage}
+
+\makeindex
 
 \title{Elementary Math Notes}
 \date{Dec 2015 -- 2016}
@@ -26,5 +28,7 @@
 \genpart{Analysis I}{analysis1}
 \genpart{Linear Algebra I}{linear1}
 \genpart{Abstract Algebra}{algebra2}
+
+\printindex
 
 \end{document}
