@@ -1,0 +1,67 @@
+\section{Group}
+
+\begin{defi}[group]
+A \idx{group} $(G, \circ)$ is a set $G$ with an operation $\circ$, such that
+\begin{enumerate}[i).]
+\item $\circ$ is associative
+\item exist identity element $e \in G$ such that $a \circ e = e \circ a$ $\forall a \in G$
+\item $\forall a \in G$, $\exists a^{-1} \in G$ such that $a \circ a^{-1} = a^{-1} \circ a = e$
+\end{enumerate}
+\end{defi}
+
+\subsection{Subgroup}
+A \idx{subgroup} of group $G$ is a subset $H$ of $G$ such that $H$ is also a group.
+It's obvious that the intersection of subgroups is still subgroup.\footnote{The set of all subgroups forms a lattice.}
+
+\begin{defi}[coset]
+Let $H$ be a subgroup of $G$, $g \in G$.
+$gH = \{g \circ h \mid h \in H\}$ is called a left \idx{coset},
+$Hg = \{h \circ g \mid h \in H\}$ is called a right coset.
+\end{defi}
+
+\begin{pro}
+Let $H$ be a subgroup of $G$, the relation $\sim$ on $G$ given by $x \sim y$ iff
+$x \circ y^{-1} \in H$ is an equivalent relation. 
+The equivalent classes are right cosets of $H$, i.e. $Hx$, $x \in G$.
+\end{pro}
+
+\begin{defi}[\idx{normal subgroup}]
+A subgroup $H$ is normal if $gH = Hg \forall g \in G$.
+\end{defi}
+
+\subsection{Quotient Group}
+\begin{defi}[quotient]
+Let $H$ be a normal subgroup of $G$, $\sim$ the equivalent relation given by
+$x \sim y$ iff $x \circ y^{-1} \in H$. Then then operation 
+$gH \circ^\prime kH \to gk H$ on the quotient set $G / \sim$ makes it into a group, 
+called the \idx{quotient group} of $G$ modulo $H$.
+\end{defi}
+
+% \subsection{Abelian Group}
+
+\subsection{Homomorphism}
+\begin{defi}[\idx{group homomorphism}]
+Let $G, H$ be groups, a homomorphism is a map $\varphi : G \to H$ such that
+$\varphi(x \circ y) = \varphi(x) \circ \varphi(y)$.
+\end{defi}
+
+\begin{pro}
+Let $\varphi : G \to H$ be a group homomorphism, then 
+\begin{enumerate}[i).]
+\item $\varphi(e_G) = e_H$
+\item $\varphi(x^{-1}) = \varphi(x)^{-1}$
+\end{enumerate}
+\end{pro}
+
+A homomorphism is called \idx{isomorphism} if it is a bijetion.
+
+\begin{defi}[kernel]
+The kennel of a group homomorphism is $\ker \varphi = \{ g \mid \varphi(g) = e_H\}$.
+\end{defi}
+
+\begin{thm}
+$\ker \varphi$ is a normal subgroup of $G$, and $G / \ker \varphi \cong \im \varphi$.
+\end{thm}
+
+A homomorphism of group can be written as 
+$$0 \to \ker \varphi \xrightarrow{i} G \xrightarrow{\varphi} H \to 0$$
