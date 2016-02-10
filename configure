@@ -1,0 +1,4 @@
+tlmgr install imakeidx
+tlmgr install xpatch
+tlmgr install etoolbox
+
