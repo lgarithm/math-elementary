@@ -1,1 +1,42 @@
 \section{Ring}
+
+\begin{defi}[ring]
+A \idx{ring} $(R, +, \times)$ is a set $R$ with two operations addition $+$ and multiplication $\times$,
+such that $(R, +)$ is an abelian group, $\times$ is associative. And $+$ is distributive to $\times$,
+i.e. $(a + b) \times c = a \times c + b \times c$, $a\times(b + c) = a \times b + a \times c$.
+\end{defi}
+
+The multiplication operator $\times$ is often omitted, and the ring $(R, +, \times)$
+if often simply written as $R$.
+
+\begin{defi}[multiplicative identity]
+Let $R$ be a ring, a multiplicative identity, or simply identity,
+is an element $1_R$ such that $1_R a = a 1_R$.
+\end{defi}
+
+A ring $(R, +, \times)$ always have an additive identity since $(R, +)$ is a group.
+We call it the zero of $R$, denoted by $0_R$.
+
+In most cases, we require a ring to have a multiplicative identity.
+
+\subsection{Ideal}
+
+\begin{defi}[two-side ideal]
+Let $R$ be a ring, a two-side ideal $I$ is a subset of $R$ such that
+\begin{enumerate}[i).]
+\item $a - b \in I \forall a, b, \in I$
+\item $ra, ar \in I \forall a \in I, r \in R$
+\end{enumerate}
+\end{defi}
+
+Note that $I$ is a subgroup of $R$ under the addition operation.
+
+\begin{defi}
+Let $I$ be a two-size ideal of $R$, the operations given by
+\begin{align*}
++^\prime &:  (a + I) +^\prime (b + I) &\to (a + b) + I \\
+\times^\prime &: (a + I) \times^\prime (b + I) &\to ab + I
+\end{align*}
+makes $(R / I, +^\prime, \times^\prime)$ into a ring, called the quotient ring of
+$R$ modulo $I$.
+\end{defi}
