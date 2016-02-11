@@ -1,1 +1,45 @@
 \section{Field}
+
+\begin{defi}[field]
+A \idx{field} is a commutative ring such that every non-zero element has a multiplicative inverse.
+\end{defi}
+
+\begin{defi}[prime field]
+Let $F$ be a field, the \idx{prime field} of $F$ is the intersection of all subfields of $F$.
+\end{defi}
+
+\begin{defi}[character of field]
+Let $F$ be a field, the \idx{character} of $F$, $\ch F$ is the number of elements in its prime field
+if its prime field is finite, otherwise the character of $F$ is defined as $0$.
+\end{defi}
+
+\begin{pro}
+Let $F$ be any field, $\ch F$ is either $0$ or prime number.
+\end{pro}
+
+\subsection{Field Extension}
+Let $E, F$ be fields, $E$ is an extension of $F$ iff $F$ is a subfield of $E$.
+The extension usually denoted as $E/F$.
+
+\begin{defi}
+Let $E/F$ be an extension of field, a $F$-automorphism of $E$ is an isomorphism
+of $E$ which fixes elements in $F$, i.e.
+isomorphism $\varphi : E \to E$ such that $\varphi(x) = x \forall x \in F$.
+\end{defi}
+
+\begin{defi}[Galois group]
+Let $E/F$ be an extension of field, the Galois group $\gal_F(E)$ is defined as the
+$F$-automorphism of $E$.
+\end{defi}
+
+\subsubsection{Adjoin}
+For an extension $E/F$ and $a \in E$, $F[x]$ is the smallest subring of $E$
+which contains both $F$ and $a$, $F(a)$ is the smallest subfield of $E$ which
+contains both $F$ and $a$. Obviously $F[a] \subseteq F(a)$.
+
+Adjoin by multiple elements can be defined in the same way, and denoted by
+$F[a_1, \dots, ]$, $F(a_1, \dots, )$
+
+\begin{defi}[simple extension]
+An extension $E/F$ is simple iff $E = F(a)$ for some $a \in E$.
+\end{defi}
